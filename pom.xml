@@ -95,15 +95,16 @@
           <includeTestSourceDirectory>true</includeTestSourceDirectory>
           <skip>${skipTests}</skip>
         </configuration>
-        <executions>
+        <!-- <executions>
           <execution>
+            <?m2e ignore?>
             <id>checkstyle</id>
             <phase>validate</phase>
             <goals>
               <goal>check</goal>
             </goals>
           </execution>
-        </executions>
+        </executions> -->
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
