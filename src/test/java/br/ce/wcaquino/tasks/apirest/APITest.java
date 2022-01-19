@@ -68,8 +68,6 @@ public class APITest {
             System.out.println(id);
         //remove task
         RestAssured.given()
-                .body("{\"task\":\"Task para remoção\",\"dueDate\":\"2022-01-30\"}")
-                .contentType(ContentType.JSON)
             .when()
                 .delete("/todo/"+id)
             .then()
